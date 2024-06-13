@@ -1,0 +1,384 @@
+body {
+  color: #4f3318;
+  font-family: Andale Mono, AndaleMono, monospace;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  background-color: #fbf9f2;
+}
+
+h2 {
+  font-family: vdl-megag, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  text-align: center;
+}
+
+h3 {
+  font-family: "ヒラギノ角ゴ ProN W3", sans-serif;
+  font-size: 18px;
+}
+
+.wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #4f3318;
+}
+
+a:hover {
+  color: #ec6d4e;
+  transition: 0.95s;
+}
+
+/* header */
+header {
+  height: 100px;
+  position: relative;
+}
+
+.header-logo {
+  width: 377px;
+  height: 61.5px;
+  position: absolute;
+  margin: 0 auto;
+  top: 1.5em;
+  left: 0;
+  right: 0;
+}
+
+.hd-nav ul {
+  display: flex;
+  position: absolute;
+  top: 4em;
+  right: 1.5em;
+}
+
+nav li {
+  margin-right: 2.5em;
+}
+
+/* main */
+.main {
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catchphrase {
+  margin-left: 20vh;
+  margin-top: 10vh;
+}
+
+/* slider */
+.slideshow {
+  width: 75%;
+}
+
+.slider img {
+  height: 55vh;
+  object-fit: cover;
+}
+
+.slider .slick-slide {
+  margin: 0 10px;
+}
+
+.main-logo {
+  width: 200px;
+  height: 180px;
+  position: absolute;
+  top: 54vh;
+  left: 51.5vh;
+}
+
+/* news */
+.news {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.news.show {
+  opacity: 1;
+  transform: none;
+  transition: 1s;
+}
+
+.news-list {
+  margin-top: 15px;
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.news-list.show {
+  opacity: 1;
+  transform: none;
+  transition: 0.7s;
+}
+
+.news dl {
+  display: flex;
+  border-bottom: 1px solid;
+  padding: 10px 0;
+}
+
+.news dt {
+  font-size: 12px;
+  margin-right: 30px;
+  padding-top: 2px;
+}
+
+.news dd {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* menu */
+.main-wrap {
+  width: 1196px;
+  margin: 0 auto;
+}
+
+.menu {
+  margin-top: 100px;
+  font-size: 18px;
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.menu-title {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+.menu-title.show {
+  opacity: 1;
+  transform: none;
+  transition: 0.7s;
+}
+/* フワッと */
+#menu-text {
+  transform: translateX(-1000px);
+  opacity: 0;
+}
+
+#menu-text.show {
+  transform: none;
+  transition: 1s;
+  opacity: 1;
+}
+
+#menu-img {
+  opacity: 0;
+  transform: translateX(1000px);
+}
+
+#menu-img.show {
+  opacity: 1;
+  transform: none;
+  transition: 1.5s;
+}
+
+#menu-reverse {
+  transform: translateX(1000px);
+  opacity: 0;
+}
+
+#menu-reverse.show {
+  transform: none;
+  transition: 1s;
+  opacity: 1;
+}
+
+#img-reverse {
+  opacity: 0;
+  transform: translateX(-1000px);
+}
+
+#img-reverse.show {
+  opacity: 1;
+  transform: none;
+  transition: 1.5s;
+}
+
+.menu dt {
+  font-size: 30px;
+  font-family: "ヒラギノ明朝 ProN ", serif;
+  font-weight: 550;
+  width: 555px;
+}
+
+.menu-container {
+  display: flex;
+  margin-top: 50px;
+}
+
+.menu-container dl {
+  margin-top: 40px;
+  margin-right: 90px;
+}
+
+.menu-reverse {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: row-reverse;
+}
+
+.menu-reverse dl {
+  margin-top: 40px;
+  margin-left: 90px;
+}
+
+.menu img {
+  width: 555px;
+  height: 351px;
+}
+
+.menutext {
+  margin-top: 7vh;
+  width: 436px;
+  height: 198px;
+}
+
+/* address */
+.address {
+  margin-top: 80px;
+  position: relative;
+}
+
+.address-container {
+  margin-top: 50px;
+}
+
+.address-text {
+  width: 400px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 190px;
+  right: -100px;
+  line-height: 2em;
+  opacity: 0;
+}
+
+.address-text.show {
+  opacity: 1;
+  right: 0;
+  transition: 3s;
+}
+
+.text-area {
+  width: 340px;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.fsp {
+  margin-top: 18px;
+}
+
+#address-h {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+#address-h.show {
+  transform: none;
+  transition: 0.7s;
+  opacity: 1;
+}
+
+.map {
+  opacity: 0;
+  transform: translateX(-1000px);
+}
+
+.map.show {
+  opacity: 1;
+  transform: none;
+  transition: 1.5s;
+}
+
+/* footer */
+footer {
+  margin-top: 50px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 377px;
+  height: 61.5px;
+  margin-right: 80px;
+}
+
+.ft-nav ul {
+  display: flex;
+  top: 4em;
+  right: 1.5em;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+small {
+  margin-top: 40px;
+}
+
+/* pagetop */
+.pagetop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+}
+.pagetop a {
+  display: block;
+  background-color: #ccc;
+  text-align: center;
+  color: #222;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 10px 10px;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+}
+.pagetop a:hover {
+  display: block;
+  background-color: #ec6d4e;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 10px 10px;
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+}
+
+/* subtitle */
+.subtitle {
+  display: block;
+  text-align: center;
+  margin-top: -5px;
+  color: #7b7a7a;
+  font-size: 12px;
+  font-family: ab-aki, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}

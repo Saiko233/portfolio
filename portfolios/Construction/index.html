@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="modern-reset.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="responsive.css">
+  <title>HAL建設</title>
+</head>
+<body>
+  <div class="warp">
+    <div class="header-warp">
+      <header> <!-- header -->
+        <div class="header-inner">
+          <div class="header-logo">
+            <h1>
+              <a href="#">
+                <img src="images/header_logo.png">
+              </a>
+            </h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">企業理念</a></li>
+              <li><a href="#">施工事例</a></li>
+              <li><a href="#">採用情報</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </div>
+
+      </header> <!-- header -->
+
+      <div hbg>
+        <input type="checkbox" id="hbg-menu">
+        <label for="hbg-menu" class="open"><img src="images/hamburger.svg"></label>
+        <label for="hbg-menu" class="back"></label>
+        <aside>
+          <ul>
+            <li><a href="#">企業理念</a></li>
+            <li><a href="#">施工事例</a></li>
+            <li><a href="#">採用情報</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </aside>
+      </div>
+
+      <p class="header-text">街を作る。未来を作る。</p>
+    </div> <!-- header-warp -->
+
+    <div class="news"> <!-- news-->
+      <h2>お知らせ</h2>
+      <div class="news-list">
+        <a href="#">
+          <dl>
+            <dt>22.11.17</dt>
+            <dd>
+              <span>お知らせ</span>
+              本社打合せ室が完成しました。
+            </dd>
+          </dl>
+        </a>
+
+        <a href="#">
+          <dl>
+            <dt>22.11.10</dt>
+            <dd>
+              <span>お知らせ</span>
+              【メディア掲載】住宅雑誌 2020年11月号
+            </dd>
+          </dl>
+        </a>
+
+        <a href="#">
+          <dl>
+            <dt>22.11.01</dt>
+            <dd>
+              <span>お知らせ</span>
+              ホームページが完成しました。
+            </dd>
+          </dl>
+        </a>
+      </div>
+    </div> <!-- news -->
+
+    <div class="case">
+      <h2>施工事例</h2>
+      <div class="case_container">
+        <div class="case_contents">
+          <dl>
+            <dt>
+              <img src="images/building1.png">
+            </dt>
+            <dd>
+              <h3>M様邸新築工事</h3>
+            </dd>
+            <dd>埼玉県</dd>
+            <dd><a href="#">
+                <img class="more" src="images/more.png">
+              </a>
+            </dd>
+          </dl>
+        </div>
+
+        <div class="case_contents">
+          <dl>
+            <dt>
+              <img src="images/building2.png">
+            </dt>
+            <dd>
+              <h3>スカイビル</h3>
+            </dd>
+            <dd>東京都</dd>
+            <dd>
+              <a href="#">
+                <img class="more" src="images/more.png">
+              </a>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div class="case_btn">
+        <button type="button">施工実績一覧</button>
+      </div>
+    </div> <!-- case -->
+
+    <div class="links"> <!-- links -->
+      <a href="#">
+        <img src="images/company.png">
+      </a>
+
+      <a href="#">
+        <img src="images/recruit.png">
+      </a>
+
+      <a href="#">
+        <img src="images/contact.png">
+      </a>
+    </div> <!-- links -->
+
+    <footer>
+      <div class="ft_wrap">
+        <div class="ft_inner">
+          <div class="ft_logo">
+            <a href="#"><img src="images/footer_logo.png"></a>
+          </div>
+          <div class="ft_list">
+            <ul>
+              <li><a href="">企業理念</a></li>
+              <li><a href="">施工事例</a></li>
+              <li><a href="">採用情報</a></li>
+              <li><a href="">お問い合わせ</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="copyright">Copyright © 2020 Aono Corporation.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const targetElement = document.querySelectorAll(".header-text");
+    console.log("画面の高さ", window.innerHeight);
+    document.addEventListener("scroll", function () {
+      for (let i = 0; i < targetElement.length; i++) {
+        const getElementDistance = targetElement[i].getBoundingClientRect().top + targetElement[i].clientHeight * 0.7;
+        if (window.innerHeight > getElementDistance) {
+          targetElement[i].classList.add("show");
+        }
+      }
+    });
+
+  </script>
+</body>
+</html>

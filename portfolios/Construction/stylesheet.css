@@ -1,0 +1,324 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+a:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", sans-serif;
+
+  line-height: 1.2;
+}
+
+li {
+  list-style: none;
+}
+
+.warp {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* header-warp */
+
+.header-warp {
+  height: 100vh;
+  width: auto;
+  background: url(images/main.png) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+header {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header-inner {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo img,
+.ft_logo img {
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 30px;
+}
+
+.header-bar {
+  display: none;
+}
+
+.header-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  font-size: 48px;
+  width: 100%;
+  opacity: 0;
+}
+
+.header-text.show {
+  transition: 1s;
+  opacity: 1;
+}
+
+#hbg-menu,
+.open {
+  display: none;
+}
+
+#hbg-menu {
+  position: absolute;
+}
+
+.open {
+  position: fixed;
+  z-index: 90;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+}
+
+.open img {
+  width: 35px;
+}
+
+#hbg-menu:checked ~ .open {
+  content: url(images/close.svg);
+  width: 35px;
+}
+
+#hbg-menu:checked ~ .back {
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#hbg-menu:checked ~ aside {
+  left: 60vw;
+}
+
+aside {
+  width: 80%;
+  height: 100%;
+  background-color: rgba(160, 216, 239, 0.8);
+  position: fixed;
+  z-index: 80;
+  top: 0;
+  left: 100vw;
+  transition: all 0.5s;
+}
+
+aside ul {
+  padding: 100px 10px;
+}
+
+aside ul li {
+  border-bottom: solid 1px black;
+  padding: 10px;
+}
+
+aside ul li a {
+  display: block;
+  padding: 9px 15px 10px 0;
+  color: #000;
+}
+/* header-warp */
+
+/* news */
+
+.news {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 90px 0;
+}
+
+.news h2 {
+  font-size: 38px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.news-list {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.news dl {
+  display: flex;
+  border-bottom: 1px solid #000;
+  padding: 30px 0;
+}
+
+.news dt {
+  font-size: 18px;
+  float: left;
+}
+
+.news dd {
+  font-size: 18px;
+}
+
+.news dd span {
+  font-size: 11px;
+  margin: 30px;
+  border: 1px solid #000;
+  padding: 5px 8px;
+}
+
+.news dl:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* news */
+
+/* case */
+
+.case {
+  padding: 90px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.case h2 {
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 90px;
+  font-weight: normal;
+}
+
+.case_container {
+  display: flex;
+}
+
+.case_contents {
+  width: 50%;
+  text-align: center;
+}
+
+.case dt {
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.case h3 {
+  font-size: 24px;
+  margin-top: 30px;
+  font-weight: normal;
+}
+
+.case dd {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.case a {
+  display: block;
+  margin-top: 15px;
+}
+
+.more {
+  width: 300px;
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.case_btn {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.case_btn button {
+  text-decoration: none;
+  border: 1px solid #000;
+  display: inline-block;
+  padding: 12px 40px;
+  color: #000;
+  font-size: 20px;
+  background-color: white;
+}
+
+.links {
+  display: flex;
+  padding-top: 90px;
+}
+/* case */
+
+/* footer */
+
+footer {
+  background-color: #000;
+}
+
+.ft_wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.ft_logo img {
+  height: 50px;
+}
+
+.ft_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  margin-bottom: 60px;
+}
+
+.ft_list ul {
+  display: flex;
+  margin: 0 auto;
+}
+
+.ft_list ul li {
+  margin: 0 30px;
+}
+
+.ft_list ul li a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 10px;
+}

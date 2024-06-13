@@ -1,0 +1,83 @@
+#game {
+  cursor: url("img/hari2.png") 40 40, auto;
+  background-color: #ce9335;
+}
+
+#game:active {
+  cursor: url("img/hari1.png") 40 40, auto;
+}
+.field {
+  margin: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 40px;
+  width: 430px;
+  background: #f5cebe;
+  color: #7327ee;
+  border: 2px solid #f5cebe;
+  border-radius: 80px;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 400px;
+  color: #cf292f;
+}
+
+.container {
+  width: 520px;
+  height: 160px;
+  margin: 20px auto;
+  text-align: center;
+  display: flex;
+}
+
+.hole {
+  margin: 24px;
+  margin-top: 95px;
+  width: 140px;
+}
+
+.mogura {
+  margin: 20px;
+  margin-right: 50px;
+  width: 140px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ana {
+  position: relative;
+}
+
+#time_area {
+  position: absolute;
+  text-align: center;
+  top: 310px;
+  left: 200px;
+  font-size: 40px;
+}
+
+#timer {
+  margin: 0 auto;
+  color: #cf292f;
+}
+
+#score {
+  position: absolute;
+  text-align: center;
+  top: 300px;
+  right: 200px;
+  font-size: 40px;
+}
+
+#count {
+  margin: 0 auto;
+  color: #cf292f;
+}

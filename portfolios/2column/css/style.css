@@ -1,0 +1,172 @@
+* {
+  text-decoration: none;
+  list-style-type: none;
+  color: #4f3318;
+}
+
+.wrap {
+  display: flex;
+}
+
+.left-wrap {
+  position: fixed;
+  background-color: #ffeddb;
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-box a {
+  color: #4f3318;
+}
+
+.logo img {
+  width: 226px;
+  border-radius: 70% 20% / 10% 40%;
+}
+
+nav {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  line-height: 2.5;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav a:hover {
+  color: #ee7800;
+  opacity: 0.6;
+  transition: 0.7s;
+}
+
+nav ul li.current a {
+  transition: 0.8s;
+  border: 2px solid #4f3318;
+  padding: 0.5rem;
+}
+
+/* right-box */
+.right-box {
+  width: 75%;
+  margin-left: 25%;
+}
+
+/* slideshow */
+#slide {
+  height: 70vh;
+  width: 100%;
+  object-fit: cover;
+  animation: imgfade 5s infinite;
+  opacity: 0;
+}
+
+@keyframes imgfade {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+h2 {
+  color: #4f3318;
+  padding: 0 1rem;
+  letter-spacing: 0.5rem;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 5rem;
+  padding-bottom: 0.7rem;
+  border-bottom: double 6px #4f3318;
+  font-weight: bolder;
+  font-size: 28px;
+  text-align: center;
+}
+
+.feature-container {
+  padding-bottom: 50px;
+  color: #4f3318;
+}
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 20px 0px 20px;
+  padding-bottom: 50px;
+  border-bottom: 1.5px solid #4f3318;
+}
+
+.feature-left {
+  width: 50%;
+}
+
+.feature-left img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition-duration: 1s;
+}
+
+.feature img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.feature-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  font-weight: 200;
+  width: fit-content;
+  padding: 0 1rem 1rem;
+  border-bottom: 3px solid #4f3318;
+  margin: 0 auto;
+}
+
+.feature p {
+  width: 80%;
+  margin: 0 10%;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  text-align: center;
+  opacity: 0.8;
+}
+
+footer {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-size: 10px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+a.anchor {
+  display: block;
+  padding-top: 25vh;
+  margin-top: -25vh;
+}

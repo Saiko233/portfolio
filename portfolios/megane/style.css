@@ -1,0 +1,407 @@
+body {
+  font-family: Georgia, "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  line-height: 1.8;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #111111;
+  display: block;
+}
+
+.warp {
+  width: 1035px;
+  margin: 0 auto;
+}
+
+/* header  */
+
+header {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  height: 152px;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+h1 a {
+  display: inline-block;
+}
+
+h1 a:hover {
+  opacity: 0.8;
+}
+
+.header-logo span {
+  font-size: 18px;
+  color: #777777;
+}
+
+.inner {
+  display: flex;
+  padding-top: 30px;
+}
+
+.header-menu ul {
+  display: flex;
+  margin: 0 auto;
+  padding-right: 200px;
+}
+
+.header-menu ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.header-menu ul li a {
+  font-size: 17px;
+  line-height: 52px;
+  padding-right: 40px;
+  color: #333;
+  position: relative;
+}
+
+.header-menu ul li a:hover {
+  color: #c49029;
+}
+
+.header-menu ul ul {
+  position: absolute;
+  display: inline-block;
+  top: 45px;
+  left: -60px;
+  height: 0;
+  visibility: hidden;
+}
+
+.header-menu ul ul li {
+  background-color: #fff;
+  width: 200px;
+  border: 1px solid #ddd;
+}
+
+.header-menu ul ul li a {
+  line-height: 1.5;
+  padding: 14px 14px;
+}
+
+.header-menu li:hover ul li {
+  visibility: visible;
+}
+
+.down::after {
+  content: "";
+  background: url(img/angle-down-solid.svg) no-repeat;
+  background-size: 9px;
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 19px;
+  left: 60px;
+}
+
+.search-warp {
+  position: relative;
+  padding-top: 9px;
+  height: 40px;
+}
+
+.search {
+  position: absolute;
+  right: 4px;
+  background: url(img/search-icon@2x.png) no-repeat left;
+  background-position: 3px;
+  background-size: 24px 24px;
+  padding-left: 25px;
+  height: 34px;
+  width: 0;
+  transition: all 0.3s;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.search:focus {
+  width: 238px;
+  cursor: text;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+}
+
+.search-submit {
+  margin-top: 5px;
+}
+
+/* header  */
+/* top-warp */
+.top-warp {
+  margin-bottom: 112px;
+}
+
+.top-img {
+  margin-bottom: 100px;
+}
+
+.top-warp h2 {
+  color: #777777;
+  font-size: 27px;
+  font-weight: normal;
+}
+/* top-warp */
+/* archive */
+.post-list {
+  margin-bottom: 80px;
+}
+
+.post-list dl {
+  display: flex;
+  margin-bottom: 90px;
+}
+
+.post-list dt {
+  padding-right: 240px;
+  margin-top: 10px;
+}
+
+.post-list dt a {
+  color: #999;
+  font-size: 15.008px;
+  width: 100px;
+}
+
+.post-list dt a:hover {
+  color: #666;
+}
+
+.post-list h3 {
+  font-size: 22.4px;
+  margin-bottom: 20px;
+}
+
+.post-list dd a {
+  display: inline-block;
+}
+
+.post-list dd a:hover {
+  color: #c49029;
+}
+
+.post-list dd {
+  color: #666;
+  font-size: 16.884px;
+}
+
+.archive {
+  margin-bottom: 70px;
+  border-bottom: 1px solid #ede9df;
+}
+
+.pagger {
+  margin-bottom: 100px;
+  margin-left: 300px;
+}
+
+.pagger ul {
+  display: flex;
+}
+
+.pagger li {
+  padding: 8px 18px;
+  color: #777;
+  font-size: 16.884px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+}
+
+.pagger li a {
+  opacity: 0.5;
+}
+
+.pagger li a:hover {
+  color: #333;
+  opacity: 1;
+}
+
+.one {
+  background-color: #eee;
+  border: solid 1px #ccc;
+  color: #333;
+  font-size: 16.884px;
+  font-weight: 700;
+  height: 45.44px;
+  width: 46.39px;
+  opacity: 1;
+}
+/* archive */
+/* profile */
+.container {
+  margin-bottom: 90px;
+  display: flex;
+}
+
+.profile {
+  margin-right: 90px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile-m img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile-meta {
+  display: inline-block;
+  margin: 23px 30px 25px 20px;
+}
+
+h4 {
+  color: #333;
+  font-weight: 600;
+  font-size: 18.9945px;
+}
+
+.profile-sns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-sns a {
+  opacity: 0.8;
+}
+
+.profile-sns a:hover {
+  opacity: 1;
+}
+
+i {
+  color: #999;
+  font-size: 24px;
+}
+
+.profile-text p {
+  line-height: 1.7;
+  color: #666;
+  font-size: 16.884px;
+  margin-top: -35px;
+}
+
+.sub {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub dt {
+  font-size: 14.4px;
+  letter-spacing: 0.05em;
+  color: #333;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.sub dd {
+  width: 200px;
+}
+
+.sb1 dd {
+  color: #666;
+  font-size: 15.8372;
+}
+
+.sb1,
+.sb2 {
+  padding-right: 45px;
+}
+
+h5 {
+  font-size: 16.884px;
+  font-weight: normal;
+  line-height: 1;
+  margin-top: 35px;
+  margin-bottom: 8px;
+}
+
+.sb2 dd {
+  margin-bottom: -16px;
+}
+
+.sb2 a,
+.sb3 a {
+  border-bottom: solid 1px #ddd;
+  display: inline-block;
+  color: #666;
+}
+
+.sb2 a:hover {
+  color: #c49029;
+}
+
+.sb2 span {
+  color: #999;
+  font-size: 14.6384px;
+}
+
+.sb3 a {
+  margin-bottom: 20px;
+}
+
+.sb-input {
+  padding: 10.13px;
+  border: solid 1px #e6e6e6;
+  color: #777;
+  line-height: 1.15;
+  width: 210px;
+}
+
+.profile-wrap {
+  border-bottom: solid 1px #ddd;
+}
+
+/* profile */
+/* footer */
+footer {
+  height: 115px;
+}
+
+.ft-inner {
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+
+.ft-sns a {
+  float: left;
+  margin-right: 22px;
+  opacity: 0.8;
+}
+
+.ft-sns a:hover {
+  opacity: 1;
+}
+
+.ft-logo {
+  color: #666666;
+  font-size: 15.8px;
+  margin-left: 510px;
+}
+
+.ft-logo p {
+  color: #999;
+}
+
+.ft-logo a {
+  opacity: 0.6;
+}
+
+.ft-logo a:hover {
+  opacity: 1;
+}

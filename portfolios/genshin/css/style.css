@@ -1,0 +1,70 @@
+.wrap {
+  background: url(../img/bg2.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0 auto;
+  color: white;
+}
+
+header {
+  background: url(../img/bg1.jpg);
+  background-size: cover;
+  background-position: 50% 12%;
+}
+
+header img {
+  margin: 0 auto;
+  height: 320px;
+}
+
+.container {
+  width: 1280px;
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item {
+  margin: 0 50px;
+  margin-top: 80px;
+}
+
+.item img {
+  width: 250px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 80px;
+  padding-bottom: 15px;
+}
+
+a img:hover {
+  transition: transform 0.6s ease;
+  transform: scale(1.1);
+}
+
+/* モーダル */
+/*infoエリアをはじめは非表示*/
+#info,
+#info2,
+#info3,
+#info4,
+#info5,
+#info6,
+#info7,
+#info8,
+#info9 {
+  display: none;
+}
+
+/*モーダルの横幅を変更したい場合*/
+.modaal-container {
+  max-width: 350px;
+}
+
+.modaal-content-container {
+  padding: 0;
+}
